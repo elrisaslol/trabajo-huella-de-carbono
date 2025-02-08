@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.chart.BarChart?>
+<?import javafx.scene.chart.CategoryAxis?>
+<?import javafx.scene.chart.NumberAxis?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.geometry.Pos?>
+
+<BorderPane xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.chatta.Controller.PantallaEstadisticasGeneralesController">
+    <top>
+        <!-- Título de la pantalla -->
+        <Label text="Estadísticas Generales de Impacto Ambiental" style="-fx-font-size: 18px; -fx-font-weight: bold;"
+               BorderPane.alignment="CENTER" />
+    </top>
+
+    <center>
+        <!-- Gráfico de barras para mostrar el impacto por categoría y usuario -->
+        <BarChart fx:id="impactoChart" prefWidth="800" prefHeight="400">
+            <xAxis>
+                <CategoryAxis label="Categoría"/>
+            </xAxis>
+            <yAxis>
+                <NumberAxis label="Impacto (kgCO2e)"/>
+            </yAxis>
+        </BarChart>
+    </center>
+
+    <bottom>
+        <!-- Resumen debajo del gráfico -->
+        <Label fx:id="resumenLabel" text="Cargando..." style="-fx-font-size: 14px;"
+               BorderPane.alignment="CENTER" />
+
+        <!-- Botón para regresar -->
+        <Button text="Volver" onAction="#switchToCrud" prefWidth="100"
+                BorderPane.alignment="CENTER" />
+    </bottom>
+</BorderPane>

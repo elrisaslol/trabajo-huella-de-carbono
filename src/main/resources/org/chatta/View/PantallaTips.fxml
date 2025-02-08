@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Button?>
+<?import javafx.geometry.Insets?>
+
+<VBox alignment="CENTER" spacing="20.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.chatta.Controller.PantallaTipsController">
+
+    <!-- Título principal de la pantalla -->
+    <Label text="Recomendación de la categoría más repetida" style="-fx-font-size: 24px; -fx-font-weight: bold;" />
+
+    <!-- Etiqueta para la recomendación -->
+    <Label fx:id="recomendacionLabel" text="Recomendación:" style="-fx-font-size: 18px;" />
+
+    <!-- Descripción de la recomendación -->
+    <Label fx:id="descripcionLabel" wrapText="true" style="-fx-font-size: 14px; -fx-text-fill: #333333;" />
+
+    <!-- Impacto estimado -->
+    <Label fx:id="impactoLabel" style="-fx-font-size: 14px; -fx-text-fill: #007f00;" />
+
+    <!-- Botón de regreso -->
+    <Button fx:id="btnBack" text="Volver a la pantalla principal" onAction="#switchToCrud" />
+
+    <padding>
+        <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+    </padding>
+</VBox>

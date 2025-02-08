@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Text?>
+
+<BorderPane xmlns="http://javafx.com/javafx/23" xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="org.chatta.Controller.PantalladeCreditosController" prefHeight="300.0" prefWidth="300.0">
+
+    <!-- Título -->
+    <top>
+        <StackPane alignment="CENTER">
+            <Text text="Créditos" style="-fx-font-size: 24px; -fx-text-fill: darkred;" />
+        </StackPane>
+    </top>
+
+    <!-- Información de los créditos -->
+    <center>
+        <VBox alignment="CENTER" spacing="15" BorderPane.alignment="CENTER">
+            <Text text="Desarrollado por:" style="-fx-font-size: 16px;" />
+            <Text text="Salvador Sánchez Pérez" style="-fx-font-size: 14px;" />
+
+            <Text text="Proyecto creado para:" style="-fx-font-size: 16px;" />
+            <Text text="Aplicación para gestión de polluciones" style="-fx-font-size: 14px;" />
+
+            <Text text="Versión: 1.0" style="-fx-font-size: 14px;" />
+
+            <Button fx:id="btnBack" text="Volver" onAction="#switchToPrincipal"
+                    style="-fx-background-color: gray; -fx-text-fill: white; -fx-font-size: 14px;">
+                <cursor>
+                    <Cursor fx:constant="HAND" />
+                </cursor>
+            </Button>
+        </VBox>
+    </center>
+
+</BorderPane>
